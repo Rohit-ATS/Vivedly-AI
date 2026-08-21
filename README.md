@@ -5,6 +5,7 @@
 [![license](https://img.shields.io/badge/license-MIT-2f6bff?style=flat-square&labelColor=0d1117)](LICENSE)
 [![platform](https://img.shields.io/badge/platform-Electron%20desktop-5eead4?style=flat-square&labelColor=0d1117)](#running-it)
 [![inference](https://img.shields.io/badge/inference-local%20first%2C%20cloud%20fallback-0f9b8e?style=flat-square&labelColor=0d1117)](#inference)
+[![built with](https://img.shields.io/badge/built%20with-Claude%20Code-d2a8ff?style=flat-square&labelColor=0d1117)](#how-this-was-built)
 [![author](https://img.shields.io/badge/built%20by-Rohit%20Maruri-5c6472?style=flat-square&labelColor=0d1117)](https://github.com/Rohit-ATS)
 
 </div>
@@ -90,6 +91,17 @@ fast, but everything structural is here.
 
 Fork it, break it, rip out the memory layer and put something better in. If you build
 something interesting on top, I'd genuinely like to see it — open an issue and tell me.
+
+## How this was built
+
+Written with **[Claude Code](https://claude.com/claude-code)**, directed by me. The
+decisions worth arguing about are the design ones — that memory had to be a tiered
+hierarchy rather than one embedding table, that the trigger engine's real job is
+deciding when to stay quiet, that local inference comes first so your screen contents
+don't leave the machine by default — and the agent implemented against them.
+
+I'd rather say that up front and take the architecture questions than have you assume
+otherwise.
 
 ## License
 
