@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="Vivedly AI — the proactive desktop coworker">
+  <defs>
+    <linearGradient id="vb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07100e"/><stop offset="60%" stop-color="#0b1512"/><stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="vt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#5eead4"/>
+    </linearGradient>
+    <radialGradient id="vo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#2dd4bf" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#0f9b8e" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="vg" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#5eead4" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <clipPath id="vc"><rect width="1200" height="260" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#vc)">
+    <rect width="1200" height="260" fill="url(#vb)"/>
+    <rect width="1200" height="260" fill="url(#vg)"/>
+
+    <!-- the companion orb -->
+    <circle cx="1000" cy="130" r="120" fill="url(#vo)" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.78;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="130" r="44" fill="none" stroke="#5eead4" stroke-opacity="0.55" stroke-width="1.25">
+      <animate attributeName="r" values="44;52;44" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="130" r="70" fill="none" stroke="#5eead4" stroke-opacity="0.22" stroke-width="1">
+      <animate attributeName="r" values="70;80;70" dur="4s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="130" r="26" fill="#5eead4" opacity="0.92">
+      <animate attributeName="opacity" values="0.92;0.6;0.92" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- signals arriving from the left: context flowing in -->
+    <g stroke="#5eead4" stroke-opacity="0.3" stroke-width="1" fill="none">
+      <path d="M742 76 H900"/><path d="M742 130 H900"/><path d="M742 184 H900"/>
+    </g>
+    <g fill="#5eead4">
+      <circle r="3" cy="76"><animate attributeName="cx" values="742;900" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle r="3" cy="130"><animate attributeName="cx" values="742;900" dur="2.6s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="2.6s" begin="0.9s" repeatCount="indefinite"/></circle>
+      <circle r="3" cy="184"><animate attributeName="cx" values="742;900" dur="2.6s" begin="1.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="2.6s" begin="1.7s" repeatCount="indefinite"/></circle>
+    </g>
+    <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#3f6f66" text-anchor="end">
+      <text x="732" y="80">screen &#183; window &#183; focus</text>
+      <text x="732" y="134">calendar &#183; mail &#183; slack</text>
+      <text x="732" y="188">memory &#183; patterns</text>
+    </g>
+
+    <text x="64" y="76" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="3.4" fill="#2dd4bf">PROACTIVE &#183; OFFLINE-FIRST &#183; DESKTOP-NATIVE</text>
+    <text x="62" y="144" font-family="Georgia,Cambria,Times New Roman,serif" font-size="54" font-weight="700" letter-spacing="-1" fill="url(#vt)">Vivedly AI</text>
+    <text x="64" y="184" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#8fa8a2">It never interrupts. It only offers &#8212; at the moment</text>
+    <text x="64" y="208" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#8fa8a2">the offer is worth making.</text>
+
+    <rect width="1200" height="260" rx="14" fill="none" stroke="#5eead4" stroke-opacity="0.1"/>
+  </g>
+</svg>
